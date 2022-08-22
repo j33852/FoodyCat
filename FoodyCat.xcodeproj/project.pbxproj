@@ -16,6 +16,14 @@
 		7803DB8728B3C7B000AAA51E /* FoodyCatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7803DB8628B3C7B000AAA51E /* FoodyCatTests.swift */; };
 		7803DB9128B3C7B000AAA51E /* FoodyCatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7803DB9028B3C7B000AAA51E /* FoodyCatUITests.swift */; };
 		7803DB9328B3C7B000AAA51E /* FoodyCatUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7803DB9228B3C7B000AAA51E /* FoodyCatUITestsLaunchTests.swift */; };
+		78B1114F28B3CD810000EF2D /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 78B1114E28B3CD810000EF2D /* SwiftyJSON */; };
+		78B1115228B3CD910000EF2D /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 78B1115128B3CD910000EF2D /* Alamofire */; };
+		78B1115428B3CE910000EF2D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 78B1115328B3CE910000EF2D /* GoogleService-Info.plist */; };
+		78B1115728B3CF190000EF2D /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 78B1115628B3CF190000EF2D /* FirebaseAnalytics */; };
+		78B1115928B3CF190000EF2D /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 78B1115828B3CF190000EF2D /* FirebaseAuth */; };
+		78B1115B28B3CF190000EF2D /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 78B1115A28B3CF190000EF2D /* FirebaseFirestoreSwift */; };
+		78B1115D28B3CF190000EF2D /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 78B1115C28B3CF190000EF2D /* FirebaseMessaging */; };
+		78B1115F28B3CF190000EF2D /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 78B1115E28B3CF190000EF2D /* FirebaseStorage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +57,7 @@
 		7803DB8C28B3C7B000AAA51E /* FoodyCatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodyCatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7803DB9028B3C7B000AAA51E /* FoodyCatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodyCatUITests.swift; sourceTree = "<group>"; };
 		7803DB9228B3C7B000AAA51E /* FoodyCatUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodyCatUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		78B1115328B3CE910000EF2D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +65,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78B1115D28B3CF190000EF2D /* FirebaseMessaging in Frameworks */,
+				78B1115B28B3CF190000EF2D /* FirebaseFirestoreSwift in Frameworks */,
+				78B1114F28B3CD810000EF2D /* SwiftyJSON in Frameworks */,
+				78B1115228B3CD910000EF2D /* Alamofire in Frameworks */,
+				78B1115F28B3CF190000EF2D /* FirebaseStorage in Frameworks */,
+				78B1115728B3CF190000EF2D /* FirebaseAnalytics in Frameworks */,
+				78B1115928B3CF190000EF2D /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +122,7 @@
 				7803DB7828B3C7B000AAA51E /* Assets.xcassets */,
 				7803DB7A28B3C7B000AAA51E /* LaunchScreen.storyboard */,
 				7803DB7D28B3C7B000AAA51E /* Info.plist */,
+				78B1115328B3CE910000EF2D /* GoogleService-Info.plist */,
 			);
 			path = FoodyCat;
 			sourceTree = "<group>";
@@ -143,6 +160,15 @@
 			dependencies = (
 			);
 			name = FoodyCat;
+			packageProductDependencies = (
+				78B1114E28B3CD810000EF2D /* SwiftyJSON */,
+				78B1115128B3CD910000EF2D /* Alamofire */,
+				78B1115628B3CF190000EF2D /* FirebaseAnalytics */,
+				78B1115828B3CF190000EF2D /* FirebaseAuth */,
+				78B1115A28B3CF190000EF2D /* FirebaseFirestoreSwift */,
+				78B1115C28B3CF190000EF2D /* FirebaseMessaging */,
+				78B1115E28B3CF190000EF2D /* FirebaseStorage */,
+			);
 			productName = FoodyCat;
 			productReference = 7803DB6C28B3C7AE00AAA51E /* FoodyCat.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +241,11 @@
 				Base,
 			);
 			mainGroup = 7803DB6328B3C7AE00AAA51E;
+			packageReferences = (
+				78B1114D28B3CD810000EF2D /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				78B1115028B3CD910000EF2D /* XCRemoteSwiftPackageReference "Alamofire" */,
+				78B1115528B3CF190000EF2D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 7803DB6D28B3C7AE00AAA51E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -232,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7803DB7C28B3C7B000AAA51E /* LaunchScreen.storyboard in Resources */,
+				78B1115428B3CE910000EF2D /* GoogleService-Info.plist in Resources */,
 				7803DB7928B3C7B000AAA51E /* Assets.xcassets in Resources */,
 				7803DB7728B3C7AE00AAA51E /* Main.storyboard in Resources */,
 			);
@@ -602,6 +634,73 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		78B1114D28B3CD810000EF2D /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = versionRange;
+				maximumVersion = 5.0.0;
+				minimumVersion = 4.0.0;
+			};
+		};
+		78B1115028B3CD910000EF2D /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = versionRange;
+				maximumVersion = 5.0.0;
+				minimumVersion = 4.0.0;
+			};
+		};
+		78B1115528B3CF190000EF2D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 9.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		78B1114E28B3CD810000EF2D /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 78B1114D28B3CD810000EF2D /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+		78B1115128B3CD910000EF2D /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 78B1115028B3CD910000EF2D /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		78B1115628B3CF190000EF2D /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 78B1115528B3CF190000EF2D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		78B1115828B3CF190000EF2D /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 78B1115528B3CF190000EF2D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		78B1115A28B3CF190000EF2D /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 78B1115528B3CF190000EF2D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		78B1115C28B3CF190000EF2D /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 78B1115528B3CF190000EF2D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		78B1115E28B3CF190000EF2D /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 78B1115528B3CF190000EF2D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7803DB6428B3C7AE00AAA51E /* Project object */;
 }
